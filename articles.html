@@ -53,27 +53,40 @@
         <div class="container pt-3">
           <div class="row">
           
-        </div>
-        <div class="container pt-3">
-          <div class="row">
-            <div class="col-md-4" v-for="data in articles">
-              <div class="card">
-                <img class="card-img-top" v-bind:src="data.thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">{{data.title}}</h5>
-                  <p class="card-text">{{data.description}}</p>
-                  <p class="card-text">{{data.author}}</p>
-                   <p class="card-text">{{data.published_at}}</p>       
-                  <a :href="'read.html?articles='+data.content" class="btn btn-primary" role="button">Read More</a>
+            <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://github.com/Muhammadrivaldo191/Tekweb2022/blob/main/img/image-4.jpg?raw=true" alt="Card image cap"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">adalah framework HTML, CSS, dan JavaScript yang berfungsi untuk mendesain website responsive dengan cepat dan mudah</p>
+                    <a href="articles2.md" class="btn btn-primary">Read</a>
+                  </div>
                 </div>
-              </div>
-            </div>   
+              </div> 
+              
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://github.com/Muhammadrivaldo191/Tekweb2022/blob/main/img/image-4.jpg?raw=true" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">CakePHP</h5>
+                    <p class="card-text">adalah framework pengembangan cepat gratis, open-source, yang digunakan untuk bahasa pemrograman PHPCSS merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam</p>
+                    <a href="articles2.md" class="btn btn-primary">Read</a>
+                  </div>
+                </div>
+              </div> 
+        
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://github.com/Muhammadrivaldo191/Tekweb2022/blob/main/img/image-4.jpg?raw=true" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Framework</h5>
+                    <p class="card-text">adalah Istilah tersebut memiliki fungsi yang sangat besar bagi pengembangan kode program secara sistematis.</p>
+                    <a href="articles1.md" class="btn btn-primary">Read</a>
+                  </div>
+                </div>
+              </div> 
           </div>
-        </div>
-  
-        </div>
-  
-        </div>
+        </section>
       
       <!--end articles-->
 
