@@ -51,3 +51,15 @@
     background-repeat: no-repeat;
     background-size: 1400px auto;
  }
+  section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+  color: aliceblue;
+}
+
+ section p {
+  text-align: center;
+  color: aliceblue;
+}
