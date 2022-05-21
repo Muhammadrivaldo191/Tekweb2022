@@ -4,7 +4,7 @@
       "ID":"1",
       "title": "Bootstrap",
       "description": "adalah framework HTML, CSS, dan JavaScript yang berfungsi untuk mendesain website responsive dengan cepat dan mudah",
-      "thumbnail": "https://raw.githubusercontent.com/muhammadrivaldo191/Tekweb2022/main/img/image-4.jpg",
+      "thumbnail": "img/image-4.jpg",
       "author": "Muhammad Rivaldo",
       "published_at": "21 Mei 2022",
       "content": "articles1.md"
@@ -14,7 +14,7 @@
       "title": "CakePHP",
       "description": "adalah framework pengembangan cepat gratis, open-source, yang digunakan untuk bahasa pemrograman PHPCSS merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam",
       "thumbnail": "img/image-4.jpg",
-      "author": "https://raw.githubusercontent.com/muhammadrivaldo191/Tekweb2022/main/img/image-4.jpg",
+      "author": "Muhammad Rivaldo",
       "published_at": "21 Mei 2022",
       "content": "articles2.md"
     },
@@ -23,7 +23,7 @@
       "title": "Framework",
       "description": "adalah Istilah tersebut memiliki fungsi yang sangat besar bagi pengembangan kode program secara sistematis",
       "thumbnail": "img/image-4.jpg",
-      "author": "https://raw.githubusercontent.com/muhammadrivaldo191/Tekweb2022/main/img/image-4.jpg",
+      "author": "Muhammad Rivaldo",
       "published_at": "21 Mei 2022",
       "content": "articles3.md"
     } 
