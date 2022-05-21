@@ -7,7 +7,7 @@ Vue.createApp({
   },
   methods: {
     getHeaderData() {
-      portofolio
+      axios
         .get('https://raw.githubusercontent.com/Muhammadrivaldo191/Tekweb2022/main/contens/header.json')
         .then((res) => {
           console.log(res.data);
@@ -18,7 +18,7 @@ Vue.createApp({
         });
     },
     getArticlesData() {
-      portofolio
+      axios
         .get('https://raw.githubusercontent.com/Muhammadrivaldo191/Tekweb2022/main/contens/articles.json')
         .then((res) => {
           console.log(res.data);
