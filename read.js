@@ -11,7 +11,7 @@ Vue.createApp({
         const articles = urlParams.get('articles');
         var converter = new showdown.Converter();
         console.log(articles);
-        portofolio
+        axios
           .get("https://raw.githubusercontent.com/Muhammadrivaldo191/tekweb2022/main/contens/"+
           articles
           )
