@@ -47,49 +47,53 @@
     <!--end navbar-->
 
     <!--articles-->
-    <sections id="Articles">
-        <div class="Article-heading">
-        <h1>Articles</h1></div>
-        <div class="container pt-3">
-          <div class="row">
-            <div class="col-md-4" v-for="data in articles">
-            <div class="card">
-              <img class="card-img-top" v-bind:src="data.thumbnail" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">{{data.title}}</h5>
-                <p class="card-text">{{data.description}}</p>
-                <p class="card-text">{{data.author}}</p>
-                 <p class="card-text">{{data.published_at}}</p>       
-                <a :href="'read.html?articles='+data.content" class="btn btn-primary" role="button">Baca Selengkapnya</a>
-              </div>
-              </div>
+    <section id="articles">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2>Articles</h2>
+                </div>
             </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4" >
+                <div class="col" v-for="items in article">
+                    <div class="card h-100">
+                        <img v-bind:src="items.thumbnail" class="card-img-top" alt="gambar">
+                        <div class="card-body">
+                            <h5 class="card-title">{{items.title}}</h5>
+                            <p class="card-text">{{items.description}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a :href="'read.html?article='+items.link">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
-      
-      <!--end articles-->
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#F0D9FF" fill-opacity="1"
+                d="M0,32L240,32L480,64L720,32L960,192L1200,32L1440,288L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- End Articles -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://unpkg.com/vue@3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="./get_json.js"></script>
   </body>
 </html>
